@@ -40,11 +40,11 @@ object Dependencies {
 
   object Compile {
     // Compile
-
+    val jodaTime      = "joda-time"                   % "joda-time"                    % "2.9.10.A"
     val camelCore     = "org.apache.camel"            % "camel-core"                   % "2.13.4" exclude("org.slf4j", "slf4j-api") // ApacheV2
 
     // when updating config version, update links ActorSystem ScalaDoc to link to the updated version
-    val config        = "com.typesafe"                % "config"                       % "1.3.0"       // ApacheV2
+    val config        = "com.typesafe"                %% "config"                       % "1.3.0.A"       // ApacheV2
     val netty         = "io.netty"                    % "netty"                        % "3.10.6.Final" // ApacheV2
     val scalaStm      = Def.setting { "org.scala-stm" %% "scala-stm" % scalaStmVersion.value } // Modified BSD (Scala)
 
@@ -131,7 +131,7 @@ object Dependencies {
   // TODO check if `l ++=` everywhere expensive?
   val l = libraryDependencies
 
-  val actor = l ++= Seq(config, java8Compat.value)
+  val actor = l ++= Seq(jodaTime, config, java8Compat.value)
 
   val testkit = l ++= Seq(Test.junit, Test.scalatest.value) ++ Test.metricsAll
 

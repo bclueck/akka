@@ -2,7 +2,7 @@
  * Copyright (C) 2009-2016 Lightbend Inc. <http://www.lightbend.com>
  */
 package akka.util
-import java.time.{ Duration ⇒ JDuration }
+import org.joda.time.{ Duration ⇒ JDuration }
 import scala.concurrent.duration.Duration
 /**
  * INTERNAL API

@@ -3,7 +3,7 @@
  */
 package akka.routing
 
-import java.time.LocalDateTime
+import org.joda.time.LocalDateTime
 
 import scala.collection.immutable
 import java.util.concurrent.ThreadLocalRandom

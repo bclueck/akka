@@ -3,7 +3,7 @@ package akka.remote.artery
 import java.io.{ IOException, RandomAccessFile }
 import java.nio.channels.FileChannel
 import java.nio.file.{ FileSystems, Path }
-import java.time.Instant
+import org.joda.time.Instant
 
 import org.agrona.concurrent.MappedResizeableBuffer
 

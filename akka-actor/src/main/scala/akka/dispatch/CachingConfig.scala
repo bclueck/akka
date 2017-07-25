@@ -176,7 +176,7 @@ private[akka] class CachingConfig(_config: Config) extends Config {
 
   def getDurationList(path: String, unit: TimeUnit) = config.getDurationList(path, unit)
 
-  def getDuration(path: String): java.time.Duration = config.getDuration(path)
+  def getDuration(path: String): org.joda.time.Duration = config.getDuration(path)
 
   def getDurationList(path: String) = config.getDurationList(path)
 

@@ -3,7 +3,7 @@
  */
 package akka.pattern
 
-import java.time.Instant
+import org.joda.time.Instant
 
 import scala.concurrent.duration.{ Deadline, Duration, FiniteDuration }
 import java.util.concurrent.ThreadLocalRandom
