@@ -92,10 +92,7 @@ object AkkaBuild extends Build {
 
   lazy val akkaScalaNightly = Project(
     id = "akka-scala-nightly",
-    base = file("akka-scala-nightly"),
-    // remove dependencies that we have to build ourselves (Scala STM)
-    // samples don't work with dbuild right now
-    aggregate = aggregatedProjects diff List[ProjectReference](agent, docs, samples)
+    base = file("akka-scala-nightly")
   ).disablePlugins(ValidatePullRequest, MimaPlugin)
 
   lazy val actor = Project(
